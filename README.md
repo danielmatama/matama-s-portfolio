@@ -27,8 +27,6 @@
 
 # 📖 [Matama's portfolio] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[Matama's portfolio]** is a breakdown of who Iam, what projects I have done, and what skills I posses as a software developer. 
 
 ## 🛠 HTML and CSS<a name="built-with"></a>
