@@ -1,0 +1,84 @@
+/* Header */
+.header {
+   height: 180px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-link {
+  list-style: none;
+  padding: 20px;
+}
+
+.nav-link .logo {
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #28352f;
+  text-decoration: none;
+}
+
+/* Introduction CSS */
+.introduction {
+  background-image: url(../images/header.svg);
+  background-repeat: no-repeat;
+  margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction-title {
+  width: 330px;
+  height: 192px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+  text-align: center;
+  padding-bottom: 58px;
+  font-family: 'Inter', sans-serif;
+}
+
+.title-green {
+  color: #36b37f;
+}
+
+.introduction-title2{
+  width: 327px;
+  height: 192px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: green;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.social-icons {
+  background-image: url(../images/footer.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  padding-top: 64.28px;
+  align-self: center;
+}
+
+.social-icons .icon {
+  padding: 10px;
+  list-style: none;
+}
+
+.body {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #172b4d;
+  padding-left: 24px;
+  padding-right: 24px;
+}
