@@ -47,16 +47,6 @@
   color: #36b37f;
 }
 
-.introduction-title2 {
-  width: 327px;
-  height: 192px;
-  font-size: 40px;
-  line-height: 52px;
-  font-weight: 700;
-  color: green;
-  font-family: sans-serif;
-  text-align: center;
-}
 
 .social-icons {
   background-image: url(../images/footer.svg);
@@ -73,7 +63,7 @@
 }
 
 .body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
@@ -81,4 +71,153 @@
   color: #172b4d;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.working {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 270px;
+  margin: 10px;
+  border: solid;
+  border-color: #d0d9d4;
+  border-radius: 15px;
+}
+
+.card-image {
+  background-color: #d0d9d4;
+  height: 270px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  color: #3a4a42;
+}
+
+.alist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.anc{
+  padding: 8px 12px;
+  background: #ebf0ee;
+  color: #3a4a42;
+  text-align: center;
+  text-decoration: none;
+}
+
+.see-button {
+  display: flex;
+  align-items: center;
+  background-color: #36b37e;
+  margin-left: 80px;
+}
+
+.intro {
+  width: 330px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.about-text {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #172b4d;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.resume-button {
+  background-color: #36b37e;
+  margin-left: 50px;
+}
+
+.card-text2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  color: #3a4a42;
+}
+
+.anc2 {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: #ffffff;
+  color: #36b37e;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sphere {
+  background-color: #d0d9d4;
+}
+
+.sp-image {
+  margin-left: 98px;
+  margin-top: 56px;
+}
+
+.diamond {
+  background-color: #d0d9d4;
+}
+
+.dm-image {
+  margin-left: 74px;
+  margin-top: 56px;
+}
+
+.light {
+    background-color: #d0d9d4;
+}
+
+.lt-image {
+  margin-left: 74px;
+  margin-top: 56px;
+}
+
+.contact-info {
+  width: 330px;
+  height: 192px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+  text-align: center;
+  padding-bottom: 58px;
+  font-family: 'Inter', sans-serif;
 }
