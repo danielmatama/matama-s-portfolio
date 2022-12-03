@@ -112,6 +112,7 @@
   line-height: 32px;
   text-align: center;
   color: #3a4a42;
+  padding-left: 0;
 }
 
 .alist {
@@ -119,6 +120,7 @@
   flex-direction: row;
   justify-content: center;
   list-style: none;
+  grid-gap: 5px;
 }
 
 .anc {
@@ -219,4 +221,13 @@
   text-align: center;
   padding-bottom: 58px;
   font-family: 'Inter', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 270px;
 }
