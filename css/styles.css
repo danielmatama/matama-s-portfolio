@@ -89,11 +89,23 @@
 }
 
 .card {
-  width: 270px;
+  width: 365px;
   margin: 10px;
   border: solid;
   border-color: #d0d9d4;
   border-radius: 15px;
+}
+
+.card-a1 {
+  margin-right: 10px;
+}
+
+.card-a2 {
+  margin-right: 10px;
+}
+
+.card-a3 {
+  margin-right: 10px;
 }
 
 .card-image {
@@ -120,7 +132,7 @@
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  grid-gap: 5px;
+  padding-left: 0;
 }
 
 .anc {
@@ -135,7 +147,7 @@
   display: flex;
   align-items: center;
   background-color: #36b37e;
-  margin-left: 80px;
+  margin-left: 124px;
 }
 
 .intro {
@@ -229,5 +241,5 @@
 
 .grid-section {
   display: grid;
-  grid-template-columns: 270px;
+  grid-template-columns: 365px;
 }
