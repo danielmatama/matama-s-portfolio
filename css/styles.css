@@ -29,6 +29,7 @@
   margin-top: -60px;
   display: flex;
   flex-direction: column;
+  float: left;
 }
 
 .introduction-title {
@@ -81,4 +82,9 @@
   color: #172b4d;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.image {
+  width: 200px;
+  float: right;
 }
