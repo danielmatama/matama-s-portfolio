@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 /* Header */
 .header {
   height: 180px;
@@ -302,6 +303,6 @@
 .sign {
   display: flex;
   align-self: center;
-  color: #dod9d4;
+  color: #d0d9d4;
   font-family: 'Inter', sans-serif;
 }
