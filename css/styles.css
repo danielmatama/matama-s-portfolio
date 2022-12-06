@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 /* Header */
 .header {
   height: 180px;
@@ -148,6 +152,7 @@
   align-items: center;
   background-color: #36b37e;
   margin-left: 124px;
+  margin-bottom: 30px;
 }
 
 .intro {
@@ -174,6 +179,7 @@
 .resume-button {
   background-color: #36b37e;
   margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 .card-text2 {
@@ -225,13 +231,12 @@
 
 .contact-info {
   width: 330px;
-  height: 192px;
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
   color: #172b4d;
   text-align: center;
-  padding-bottom: 58px;
+  padding-bottom: 10px;
   font-family: 'Inter', sans-serif;
 }
 
@@ -242,4 +247,61 @@
 .grid-section {
   display: grid;
   grid-template-columns: 365px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-forms {
+  display: flex;
+  align-items: center;
+}
+
+.inputs {
+  list-style: none;
+  margin-left: 0;
+}
+
+.label {
+  display: block;
+}
+
+#name {
+  width: 100%;
+  height: 48px;
+  border: solid;
+  border-color: #d0d9d4;
+  border-radius: 4px;
+}
+
+#msg {
+  width: 100%;
+  height: 114px;
+  margin-top: 20px;
+  border: solid;
+  border-color: #d0d9d4;
+  border-radius: 4px;
+}
+
+#e-mail {
+  border: solid;
+  border-color: #d0d9d4;
+  border-radius: 4px;
+  margin-top: 20px;
+  height: 48px;
+}
+
+.in {
+  width: 350px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.sign {
+  display: flex;
+  align-self: center;
+  color: #dod9d4;
+  font-family: 'Inter', sans-serif;
 }
