@@ -363,28 +363,20 @@ a {
     justify-content: center;
   }
 
-  .title-green{
+  .title-green {
     padding: 0;
     margin: 0;
     height: auto;
   }
 
-  .body{
+  /* .social-icons {
     padding: 0;
     margin: 0;
     height: auto;
-  }
-
-  .social-icons {
-    padding: 0;
-    margin: 0;
-    height: auto;
-  }
+  } */
 
   .introduction-title {
     width: 920px;
-    margin-bottom: 0;
-    padding-bottom: 0;
     padding: 0;
     margin: 0;
     height: auto;
