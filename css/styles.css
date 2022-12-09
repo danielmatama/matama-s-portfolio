@@ -347,9 +347,8 @@ a {
   font-family: 'Inter', sans-serif;
 }
 
-
 /* Desktop CSS */
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
   .mobile-link {
     display: none;
   }
@@ -364,19 +363,13 @@ a {
     justify-content: center;
   }
 
-
-  .introduction-title, .title-green, .body, .social-icons {
-    padding: 0px;
-    margin: 0px;
-    /* margin: auto; */
-    /* padding-bottom: 5px; */
+  .introduction-title,
+  .title-green,
+  .body,
+  .social-icons {
+    padding: 0;
+    margin: 0;
     height:auto;
-    /* width: 920px; */
-  }
-
-
-  .title-green {
-
   }
 
   .introduction-title {
@@ -389,18 +382,8 @@ a {
     width: 100%;
     height: 120vh;
     background: none;
-    /* display: flex; */
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-
-
-
-    /* background-position: 500px 100px; */
-    /* margin-top: -60px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-
   }
 
   .first {
