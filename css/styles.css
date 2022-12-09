@@ -8,10 +8,19 @@
   height: 180px;
 }
 
-.nav-bar {
+.nav-bar .nav-element {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #172b4d;
+}
+
+.desktop-link {
+  display: none;
 }
 
 .nav-link {
@@ -50,6 +59,7 @@
 
 .title-green {
   color: #36b37f;
+  text-align: center;
 }
 
 .social-icons {
@@ -78,19 +88,28 @@
 }
 
 .working {
-  display: flex;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  max-width: 9ch;
+  word-wrap: break-word;
+  margin-inline: auto;
 }
 
 .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.container .works-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -196,7 +215,7 @@
 .anc2 {
   display: flex;
   align-items: center;
-  padding: 8px 12px;
+  padding: 8px 8px;
   background: white;
   color: #36b37e;
   text-align: center;
@@ -208,8 +227,8 @@
 }
 
 .sp-image {
-  margin-left: 98px;
-  margin-top: 56px;
+  margin-left: 150px;
+  margin-top: 80px;
 }
 
 .diamond {
@@ -217,7 +236,7 @@
 }
 
 .dm-image {
-  margin-left: 74px;
+  margin-left: 120px;
   margin-top: 56px;
 }
 
@@ -226,7 +245,7 @@
 }
 
 .lt-image {
-  margin-left: 74px;
+  margin-left: 120px;
   margin-top: 56px;
 }
 
@@ -245,6 +264,8 @@
 
 .text-center {
   text-align: center;
+  background-image: url(../images/about.svg);
+  background-repeat: no-repeat;
 }
 
 .grid-section {
@@ -303,9 +324,184 @@
   padding-left: 0;
 }
 
+.in::placeholder {
+  padding-top: 15px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.in::-ms-value {
+  padding-top: 15px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .sign {
   display: flex;
   align-self: center;
   color: #d0d9d4;
   font-family: 'Inter', sans-serif;
+}
+
+
+/* Desktop CSS */
+@media screen and (min-width: 768px)  {
+  .mobile-link {
+    display: none;
+  }
+
+  .desktop-link {
+    display: flex;
+  }
+
+  .nav-bar .nav-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  .introduction-title, .title-green, .body, .social-icons {
+    padding: 0px;
+    margin: 0px;
+    /* margin: auto; */
+    /* padding-bottom: 5px; */
+    height:auto;
+    /* width: 920px; */
+  }
+
+
+  .title-green {
+
+  }
+
+  .introduction-title {
+    width: 920px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .introduction {
+    width: 100%;
+    height: 120vh;
+    background: none;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+
+
+
+    /* background-position: 500px 100px; */
+    /* margin-top: -60px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+
+  }
+
+  .first {
+    background-image: url(../images/new.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 150px;
+  }
+
+  .work-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .card {
+    width: 200;
+    margin: 0;
+    background-color: #d0d9d4;
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: row;
+    margin-top: 162px;
+  }
+
+  .contact-info {
+    text-align: left;
+    width: 463px;
+  }
+
+  .form button {
+    margin-left: 0;
+  }
+
+  .alist {
+    max-width: 364px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+  }
+
+  .anc2 {
+    margin-right: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+
+  .body {
+    margin-top: 25px;
+    margin-left: 125px;
+    width: 920px;
+  }
+
+  .working {
+    max-width: 40ch;
+  }
+
+  .about-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 192px;
+    background-image: url(../images/about-d.svg);
+    background-repeat: no-repeat;
+  }
+
+  .social-icons {
+    margin-top: 0px;
+    background: none;
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+
+  #name {
+    width: 640px;
+  }
+
+  .contact-forms {
+    background-image: url(../images/contact.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .contact-message {
+    background-image: url(../images/bottom.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+    background-image: url(../images/stone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 }
