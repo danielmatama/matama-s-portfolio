@@ -363,19 +363,31 @@ a {
     justify-content: center;
   }
 
-  .introduction-title,
-  .title-green,
-  .body,
+  .title-green{
+    padding: 0;
+    margin: 0;
+    height: auto;
+  }
+
+  .body{
+    padding: 0;
+    margin: 0;
+    height: auto;
+  }
+
   .social-icons {
     padding: 0;
     margin: 0;
-    height:auto;
+    height: auto;
   }
 
   .introduction-title {
     width: 920px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
+    height: auto;
   }
 
   .introduction {
@@ -455,9 +467,9 @@ a {
   }
 
   .social-icons {
-    margin-top: 0px;
+    margin-top: 0;
     background: none;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 50px;
   }
 
@@ -486,5 +498,4 @@ a {
     background-repeat: no-repeat;
     background-position: center;
   }
-
 }
