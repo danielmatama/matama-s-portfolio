@@ -198,6 +198,7 @@ a {
   padding-left: 24px;
   padding-right: 24px;
 }
+
 .t-x {
   display: none;
 }
@@ -413,12 +414,6 @@ a {
     background-color: #d0d9d4;
   }
 
-  .contact-me {
-    display: flex;
-    flex-direction: row;
-    margin-top: 162px;
-  }
-
   .contact-info {
     text-align: left;
     width: 463px;
@@ -461,7 +456,7 @@ a {
     background-position: 0 200px;
   }
 
-  .t-x{
+  .t-x {
     display: flex;
     padding-top: 100px;
     padding-left: 10px;
@@ -512,6 +507,10 @@ a {
     background-position: 1px 100px;
     height: 500px;
     margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    margin-top: 162px;
+
   }
 
   .contact-container {
