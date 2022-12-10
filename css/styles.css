@@ -99,13 +99,7 @@ a {
   margin-inline: auto;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.container .works-section {
+.works-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,8 +107,7 @@ a {
 }
 
 .card {
-  width: 365px;
-  margin: 10px;
+  width: 369px;
   border: solid;
   border-color: #d0d9d4;
   border-radius: 15px;
@@ -151,6 +144,10 @@ a {
   padding-left: 0;
 }
 
+.card-bottom {
+  background-color: white;
+}
+
 .alist {
   display: flex;
   flex-direction: row;
@@ -159,12 +156,18 @@ a {
   padding-left: 0;
 }
 
+.card2 {
+  background-color: #d0d9d4;
+  border-radius: 10px;
+}
+
 .anc {
   padding: 8px 12px;
   background: #ebf0ee;
   color: #3a4a42;
   text-align: center;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 .see-button {
@@ -195,6 +198,9 @@ a {
   padding-left: 24px;
   padding-right: 24px;
 }
+.t-x {
+  display: none;
+}
 
 .resume-button {
   background-color: #36b37e;
@@ -220,6 +226,7 @@ a {
   color: #36b37e;
   text-align: center;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 .sphere {
@@ -227,8 +234,8 @@ a {
 }
 
 .sp-image {
-  margin-left: 150px;
-  margin-top: 80px;
+  margin-left: 20px;
+  margin-top: 40px;
 }
 
 .diamond {
@@ -369,12 +376,6 @@ a {
     height: auto;
   }
 
-  /* .social-icons {
-    padding: 0;
-    margin: 0;
-    height: auto;
-  } */
-
   .introduction-title {
     width: 920px;
     padding: 0;
@@ -402,6 +403,8 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 
   .card {
@@ -448,14 +451,47 @@ a {
     max-width: 40ch;
   }
 
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-image: url(../images/about.svg);
+    background-position: 0 200px;
+  }
+
+  .t-x{
+    display: flex;
+    padding-top: 100px;
+    padding-left: 10px;
+    width: 420px;
+    height: 600px;
+    margin-left: 180px;
+    background-image: url(../images/group4.png);
+    background-position: left;
+  }
+
+  .t-x img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .t-w {
+    margin-left: 300px;
+  }
+
+  .text-center {
+    background-image: none;
+  }
+
   .about-me-text {
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 192px;
-    background-image: url(../images/about-d.svg);
-    background-repeat: no-repeat;
   }
 
   .social-icons {
@@ -466,19 +502,28 @@ a {
   }
 
   #name {
-    width: 640px;
+    width: 600px;
   }
 
-  .contact-forms {
-    background-image: url(../images/contact.svg);
+  .contact-me {
+    background-image: url(../images/group.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 1px 100px;
+    height: 500px;
+    margin-left: 0;
+  }
+
+  .contact-container {
+    padding-left: 0;
+  }
+
+  body {
+    padding-left: 0;
   }
 
   .contact-message {
-    background-image: url(../images/bottom.svg);
-    background-repeat: no-repeat;
-    background-position: left;
+    margin-left: 120px;
   }
 
   .end {
@@ -486,8 +531,5 @@ a {
     flex-direction: row;
     justify-content: center;
     margin-top: 150px;
-    background-image: url(../images/stone.svg);
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
