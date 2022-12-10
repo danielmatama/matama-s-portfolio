@@ -41,6 +41,13 @@
   text-align: center;
   padding-bottom: 58px;
   font-family: 'Inter', sans-serif;
+  animation: left-to-right 1s ease-in-out;
+}
+
+@keyframes left-to-right {
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .title-green {
@@ -59,6 +66,10 @@
 .social-icons .icon {
   padding: 10px;
   list-style: none;
+}
+
+.icon:hover {
+  background-color: #172b4d;
 }
 
 .body {
