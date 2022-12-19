@@ -42,7 +42,7 @@
 
 **[Matama's portfolio]** is a brief discription of my skills and accomplishments as a software developer...
 
-## 🛠 Built With HTML and CSS <a name="built-with"></a>
+## 🛠 Built With HTML, CSS and JavaScript<a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -173,7 +173,7 @@ Example:
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@uchenna-ibute](https://github.com/uchena-ibute)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
