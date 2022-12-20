@@ -23,6 +23,39 @@ a {
   display: none;
 }
 
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  padding-bottom: 40px;
+}
+
+.ax {
+  font-family: 'Inter', sans-serif;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.xmark {
+  margin-left: 340px;
+  margin-top: 20px;
+}
+
+.hide {
+  display: none;
+}
+
 .nav-link {
   list-style: none;
   padding: 20px;

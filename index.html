@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>matama's portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>matama's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,17 +32,33 @@
         <li class="nav-link desktop-link"><a href="#">Portifolio</a></li>
         <li class="nav-link desktop-link"><a href="#">About</a></li>
         <li class="nav-link desktop-link" id="test"><a href="#">Contact</a></li>
+
+        <div class="dropdown">
+
+        <div class="dbutton">
         <li class="nav-link mobile-link">
-          <a href="#">
+          <a href="#" class="dropdown-button">
             <img src="images/menubar.svg" width="24px" height="24px" alt="decorative image">
           </a>
         </li>
+        </div>
+
+
+        <div class="dropdown-menu hide" id="myDropdown">
+          <span class="xmark"><i class="fa-solid fa-xmark"></i></span>
+          <a href="#portfolio" class="ax">Portfolio</a>
+          <a href="#about" class="ax">About</a>
+          <a href="#contact" class="ax">Contact</a>
+        </div>
+
+        </div>
+
       </ul>
     </nav>
   </header>
 
   <!-- Introduction Area -->
-  <section class="introduction">
+  <section class="introduction" id="portfolio">
     <h1 class="introduction-title">Hey there, I’m Matama</h1>
     <h1 class="title-green">I’m a software developer</h1>
     <!-- <h1 class="introduction-title2"></h1> -->
@@ -166,6 +185,8 @@
       </div>
 
       <!-- About me -->
+  <section id="about">
+
       <div class="about-me">
         <div class="t-w">
         <div class="about-me-text">
@@ -184,6 +205,7 @@
           <img src="images/group5.svg" alt="decorative image-2">
         </div>
       </div>
+</section>
 
       <div class="work-cards">
       <div class="card2">
@@ -232,6 +254,7 @@
 
 
     <!-- get in touch -->
+<section id="contact">
 
     <div class="contact-container">
       <div class="contact-me">
@@ -266,7 +289,7 @@
         </form>
       </div>
       </div>
-
+</section>
       <div class="end">
       <ul class="social-icons">
         <li class="icon"><a href="#"><img src="images/twitter.svg" alt="twitter icon"></a></li>
@@ -280,7 +303,7 @@
       <p class="sign">danmatama2020@gmail.com</p>
 
     </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>
