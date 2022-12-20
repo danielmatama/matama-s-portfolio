@@ -56,6 +56,90 @@ a {
   display: none;
 }
 
+.popup {
+position: fixed;
+top: 0;
+width: 100vw;
+height: 100vh;
+background-color: white;
+}
+
+.xsign {
+position: absolute;
+top: 0;
+margin-left: 350px;
+margin-top: 10px;
+}
+
+.pop-img {
+width: 430px;
+position: relative;
+padding-top: 0;
+height: 300px;;
+}
+
+.phead {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  width: 260px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.ptext {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.plist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.panc {
+  padding: 8px 12px;
+  background: #ebf0ee;
+  color: #3a4a42;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-right: 10px;
+
+}
+
+.pbuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  gap:30px;
+  margin-top: 20px;
+}
+
+.see {
+  margin-top: 20px;
+  padding-right: 10px;
+  color: white;
+  width: 151px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  background-color: #36b37f;
+}
+
+.pophide {
+  display: none;
+}
+
 .nav-link {
   list-style: none;
   padding: 20px;
@@ -396,6 +480,10 @@ a {
 
   .desktop-link {
     display: flex;
+  }
+
+  .pophide {
+    display: none;
   }
 
   .nav-bar .nav-element {
