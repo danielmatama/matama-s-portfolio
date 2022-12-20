@@ -42,7 +42,7 @@
 
 **[Matama's portfolio]** is a brief discription of my skills and accomplishments as a software developer...
 
-## 🛠 Built With HTML and CSS <a name="built-with"></a>
+## 🛠 Built With HTML, CSS and JavaScript<a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -86,7 +86,6 @@
 > Add a link to your deployed project.
 
 - [https://danielmatama.github.io/matama-s-portfolio/](https://danielmatama.github.io/matama-s-portfolio/)
-- https://www.loom.com/share/786021eac3de48f696419d1abdcb4b23
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,7 +173,7 @@ Example:
 
 👤 **Author2**
 
-- GitHub: [@Eric Umeohabike](https://github.com/eric2umeh)
+- GitHub: [@uchenna-ibute](https://github.com/uchena-ibute)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
