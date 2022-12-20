@@ -23,16 +23,7 @@ a {
   display: none;
 }
 
-.dropdown-menu {
-  display: flex;
-  flex-direction: column;
-  width: 100vh;
-  height: 100vh;
-  position: fixed;
-  bottom: 0;
-  top: 0;
-  padding-bottom: 40px;
-}
+/* here */
 
 .ax {
   font-family: 'Inter', sans-serif;
