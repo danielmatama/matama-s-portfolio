@@ -57,11 +57,11 @@ a {
 }
 
 .popup {
-position: fixed;
-top: 0;
-width: 100vw;
-height: 100vh;
-background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
 }
 
 .popupdesk {
@@ -72,29 +72,24 @@ background-color: white;
   background-color: white;
 }
 
-.pheaddesk {
-  display: flex;
-  flex-direction: column;
-}
-
 .xsign {
-position: absolute;
-top: 0;
-margin-left: 350px;
-margin-top: 10px;
+  position: absolute;
+  top: 0;
+  margin-left: 350px;
+  margin-top: 10px;
 }
 
-.xsigndesk{
-position: absolute;
-right: 0;
-margin-right: 40px;
+.xsigndesk {
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
 }
 
 .pop-img {
-width: 430px;
-position: relative;
-padding-top: 0;
-height: 300px;
+  width: 430px;
+  position: relative;
+  padding-top: 0;
+  height: 300px;
 }
 
 .popdesk-img {
@@ -120,6 +115,8 @@ height: 300px;
 }
 
 .pheaddesk {
+  display: flex;
+  flex-direction: column;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -148,7 +145,6 @@ height: 300px;
   justify-content: center;
   list-style: none;
   padding-left: 0;
-
 }
 
 .panc {
@@ -159,7 +155,6 @@ height: 300px;
   text-decoration: none;
   border-radius: 10px;
   margin-right: 10px;
-
 }
 
 .pbuttons {
@@ -167,7 +162,7 @@ height: 300px;
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  gap:30px;
+  gap: 30px;
   margin-top: 20px;
 }
 
@@ -186,7 +181,7 @@ height: 300px;
   display: none;
 }
 
-.pophidedesk{
+.pophidedesk {
   display: none;
 }
 
