@@ -85,6 +85,9 @@ margin-top: 10px;
 }
 
 .xsigndesk{
+position: absolute;
+right: 0;
+margin-right: 40px;
 }
 
 .pop-img {
@@ -95,8 +98,12 @@ height: 300px;
 }
 
 .popdesk-img {
-  height: 300px;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 400px;
+  margin-left: 450px;
 }
 
 .phead {
@@ -110,6 +117,24 @@ height: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
+}
+
+.pheaddesk {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  width: 460px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 420px;
+}
+
+.textdesk {
+  display: flex;
+  flex-direction: row;
 }
 
 .ptext {
