@@ -45,6 +45,30 @@ section.innerHTML = `
   </button>
   </ul>
   </div>
+
+
+  <div class="popupdesk pophidedesk">
+
+  <img src="images/desktop.svg" alt="" class="popdesk-img">
+  <h2 class="phead">Keeping track of hundreds of
+    components</h2>
+    <ul class="plist">
+      <li><a href="#" class="panc card-a4">Ruby on rails</a></li>
+      <li><a href="#" class="panc card-a2">CSS</a></li>
+      <li><a href="#" class="panc card-a3">Javscript</a></li>
+    </ul>
+  <p class="ptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <ul class="pbuttons">
+  <button class="see" type="button" name="button">
+  <span>See Live</span>
+  <span><img src="images/upload.svg" alt=""></span>
+  </button>
+  <button class="see" type="button" name="button">
+  <span>See Source</span>
+  <span><img src="images/vector.svg" alt=""></span>
+  </button>
+  </ul>
+  </div>
 `;
 
 const button = document.querySelectorAll(".see-button");
@@ -60,8 +84,56 @@ sign.addEventListener("click", () => {
 });
 
 // mediaquery
-const madia = matchMedia('(min-width:600px)');
-media.addEventListener("change", e => console.log(e));
+window.addEventListener("resize", () => {
+  if (window.innerWidth >=768) {
+    popup.classList.toggle("pophide");
+  }
+});
+const popupdesk = document.querySelector(".popupdesk");
+window.addEventListener("resize", () => {
+  if (window.innerWidth >=768) {
+    popupdesk.classList.toggle("pophidedesk");
+  }
+});
+
+
+
+
+
+
+
+// let max_slides = 4;
+// let max_items = 3;
+// const screen_size = window.matchMedia("(max-width: 600px)");
+//
+// function getSlidesCount () {
+//
+//   console.log(window.innerWidth);
+//
+//   if (screen_size.matches) { // If media query matches
+//     max_slides = 4;
+//     max_items = 3;
+//     console.log('Media query matches screen_size query');
+//   } else {
+//     max_slides = 2;
+//     max_items = 6;
+//     console.log('Media query does not match screen_size query');
+//   }
+// }
+//
+// getSlidesCount();
+// window.addEventListener('resize', getSlidesCount);
+
+
+
+
+
+
+
+
+
+// const madia = matchMedia('(min-width:600px)');
+// media.addEventListener("change", e => console.log(e));
 
 
 

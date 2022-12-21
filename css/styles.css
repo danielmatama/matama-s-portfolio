@@ -64,6 +64,19 @@ height: 100vh;
 background-color: white;
 }
 
+.popupdesk {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.pheaddesk {
+  display: flex;
+  flex-direction: column;
+}
+
 .xsign {
 position: absolute;
 top: 0;
@@ -71,11 +84,19 @@ margin-left: 350px;
 margin-top: 10px;
 }
 
+.xsigndesk{
+}
+
 .pop-img {
 width: 430px;
 position: relative;
 padding-top: 0;
-height: 300px;;
+height: 300px;
+}
+
+.popdesk-img {
+  height: 300px;
+  width: 100vw;
 }
 
 .phead {
@@ -137,6 +158,10 @@ height: 300px;;
 }
 
 .pophide {
+  display: none;
+}
+
+.pophidedesk{
   display: none;
 }
 
