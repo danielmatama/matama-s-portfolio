@@ -82,7 +82,13 @@ a {
   z-index: 1;
 }
 
-/* add here */
+.xsigndesk {
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  z-index: 10;
+  margin-top: : 60px;
+}
 
 .pop-img {
   width: 370px;
