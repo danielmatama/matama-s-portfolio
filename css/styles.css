@@ -78,7 +78,6 @@ a {
   top: 0;
   margin-left: 298px;
   padding-top: 50px;
-  /* padding-right: 20px; */
   z-index: 1;
 }
 
@@ -115,8 +114,6 @@ a {
   line-height: 44px;
   color: #172b4d;
   width: 260px;
-  /* margin-top: 20px; */
-  /* margin-bottom: 20px; */
   margin-left: 10px;
 }
 
