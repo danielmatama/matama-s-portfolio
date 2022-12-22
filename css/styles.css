@@ -62,6 +62,7 @@ a {
   width: 100vw;
   height: 100vh;
   background-color: white;
+  border: 20px solid #c1c7d0;
 }
 
 .popupdesk {
@@ -75,30 +76,29 @@ a {
 .xsign {
   position: absolute;
   top: 0;
-  margin-left: 350px;
-  margin-top: 10px;
+  margin-left: 298px;
+  padding-top: 50px;
+  /* padding-right: 20px; */
+  z-index: 1;
 }
 
-.xsigndesk {
-  position: absolute;
-  right: 0;
-  margin-right: 40px;
-}
+/* add here */
 
 .pop-img {
-  width: 430px;
+  width: 370px;
   position: relative;
-  padding-top: 0;
-  height: 300px;
+  height: 320px;
+  padding-right: 35px;
 }
 
 .popdesk-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+  width: 600px;
   height: 350px;
-  width: 400px;
-  margin-left: 450px;
+  margin-left: 360px;
 }
 
 .phead {
@@ -109,8 +109,8 @@ a {
   line-height: 44px;
   color: #172b4d;
   width: 260px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
   margin-left: 10px;
 }
 
@@ -142,9 +142,16 @@ a {
 .plist {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
   padding-left: 0;
+}
+
+.plistdesk {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
 }
 
 .panc {
@@ -160,10 +167,9 @@ a {
 .pbuttons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
-  gap: 30px;
-  margin-top: 20px;
+  gap: 47px;
 }
 
 .see {
@@ -528,6 +534,10 @@ a {
   }
 
   .pophide {
+    display: none;
+  }
+
+  .pophidedesk{
     display: none;
   }
 

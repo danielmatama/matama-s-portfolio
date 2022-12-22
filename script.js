@@ -33,7 +33,7 @@ section.innerHTML = `
       <li><a href="#" class="panc card-a2">CSS</a></li>
       <li><a href="#" class="panc card-a3">Javscript</a></li>
     </ul>
-  <p class="ptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="ptext"> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <ul class="pbuttons">
   <button class="see" type="button" name="button">
   <span>See Live</span>
@@ -48,6 +48,7 @@ section.innerHTML = `
 
 
   <div class="popupdesk pophidedesk">
+  <div class="alldesk">
   <div class = pheaddesk>
   <span class="xsigndesk"><img src="images/desk.svg" alt=""></span>
   <img src="images/desktop.svg" alt="" class="popdesk-img">
@@ -66,7 +67,7 @@ section.innerHTML = `
     </button>
     </ul>
     </div>
-    <ul class="plist">
+    <ul class="plistdesk">
       <li><a href="#" class="panc card-a4">Codekit</a></li>
       <li><a href="#" class="panc card-a2">Github</a></li>
       <li><a href="#" class="panc card-a3">Javscript</a></li>
@@ -74,7 +75,7 @@ section.innerHTML = `
       <li><a href="#" class="panc card-a3">Terminal</a></li>
     </ul>
   <p class="ptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+  </div>
   </div>
 `;
 
