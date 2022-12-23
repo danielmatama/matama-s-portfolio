@@ -2,6 +2,8 @@ const dropdownButton = document.querySelector('.dropdown-button');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 const mark = document.querySelector('.xmark');
 const Items = document.querySelectorAll('.nav-bar .ax');
+const namee = document.querySelector('input[type="text"]');
+const text = document.querySelector('textarea');
 dropdownButton.addEventListener('click', () => {
   dropdownMenu.classList.toggle('hide');
 });
@@ -163,27 +165,15 @@ form.addEventListener('submit', (event) => {
 });
 
 
-const valueInput = JSON.parse(localStorage.getItem('valueInput'));
+const valueInput = JSON.parse(localStorage.getItem('valueInput')) || [];
 
 function addVale(n, e, t) {
-  valueInput.push({
-    n,
-    e,
-    t
-  });
+  valueInput.push({ n, e, t });
   localStorage.setItem('valueInput', JSON.stringify(valueInput));
-  return {
-    n,
-    e,
-    t
-  };
+  return { n, e, t };
 }
 
-function showNow({
-  n,
-  e,
-  t
-}) {
+function showNow({ n, e, t }) {
   namee.value = n;
   email.value = e;
   text.value = t;
