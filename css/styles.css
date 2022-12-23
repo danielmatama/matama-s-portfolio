@@ -65,6 +65,20 @@ a {
   border: 15px solid #c1c7d0;
 }
 
+.message {
+  width: 100%;
+  background-color: #fff;
+  color: rgb(205 0 0);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  border: 1px solid rgb(205 0 0);
+  border-radius: 4px;
+  padding: 2%;
+  margin-bottom: 5px;
+  display: none;
+}
+
 .xsign {
   position: absolute;
   top: 0;
@@ -95,7 +109,7 @@ a {
 .ptext {
   margin-left: 10px;
   margin-right: 10px;
-  height: 148px;
+  height: 146px;
   z-index: 1;
 }
 

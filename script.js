@@ -9,6 +9,7 @@ dropdownButton.addEventListener("click", () => {
 mark.addEventListener("click", () => {
   dropdownMenu.classList.toggle("hide");
 });
+
 Items.forEach((n) => {
   n.addEventListener('click', () => {
     dropdownMenu.classList.toggle('hide');
@@ -135,11 +136,12 @@ sign.addEventListener("click", () => {
   popupWindow.classList.toggle('pophide');
 });
 
+
 const form = document.querySelector('form');
 const email = document.querySelector('input[type="email"]');
 const msg = document.querySelector('form .message');
 const name = document.querySelector('input[type="text"]');
-const text = document.querySelector('in');
+const text = document.querySelector('textarea');
 
 function showError(m) {
   msg.style.display = 'block';
@@ -149,7 +151,7 @@ function showError(m) {
 function showSuccess(mass) {
   msg.style.display = 'block';
   msg.style.color = 'white';
-  msg.style.backgroundColor = '#ff6b00';
+  msg.style.backgroundColor = 'green';
   msg.innerText = mass;
 }
 
@@ -166,7 +168,6 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   checkLowerCase(email);
 });
-
 
 
 // mediaquery
