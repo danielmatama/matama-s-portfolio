@@ -21,19 +21,19 @@ const body = document.querySelector("body");
 const section = document.createElement("section");
 body.appendChild(section);
 section.innerHTML = `
+  <div class="popup-window pophide">
   <div class="popup pophide">
   <div class="phead">
-  <img src="images/pop.svg" alt="" class="pop-img">
-  <span class="xsign"><img src="images/xicon.svg" alt=""></span>
+   <span class="xsign"><i class="fa-solid fa-xmark xsign-icon"></i></span>
+   <img src="" alt="" class="pop-img" />
   </div>
-  <h2 class="phead">Keeping track of hundreds of
-    components</h2>
+  <h2 class="phead-h2"></h2>
     <ul class="plist">
       <li><a href="#" class="panc card-a4">Ruby on rails</a></li>
       <li><a href="#" class="panc card-a2">CSS</a></li>
       <li><a href="#" class="panc card-a3">Javscript</a></li>
     </ul>
-  <p class="ptext"> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="ptext"> </p>
   <ul class="pbuttons">
   <button class="see" type="button" name="button">
   <span>See Live</span>
@@ -45,80 +45,99 @@ section.innerHTML = `
   </button>
   </ul>
   </div>
-
-
-  <div class="popupdesk pophidedesk">
-  <div class="alldesk">
-  <div class = pheaddesk>
-  <span class="xsigndesk"><img src="images/desk.svg" alt=""></span>
-  <img src="images/desktop.svg" alt="" class="popdesk-img">
-  </div>
-  <div class="textdesk">
-  <h2 class="pheaddesk">Keeping track of hundreds of
-    components</h2>
-    <ul class="pbuttons">
-    <button class="see" type="button" name="button">
-    <span>See Live</span>
-    <span><img src="images/upload.svg" alt=""></span>
-    </button>
-    <button class="see" type="button" name="button">
-    <span>See Source</span>
-    <span><img src="images/vector.svg" alt=""></span>
-    </button>
-    </ul>
-    </div>
-    <ul class="plistdesk">
-      <li><a href="#" class="panc card-a4">Codekit</a></li>
-      <li><a href="#" class="panc card-a2">Github</a></li>
-      <li><a href="#" class="panc card-a3">Javscript</a></li>
-      <li><a href="#" class="panc card-a3">Bootstrap</a></li>
-      <li><a href="#" class="panc card-a3">Terminal</a></li>
-    </ul>
-  <p class="ptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
   </div>
 `;
 
 const projectDetails = [
   {
-    name: 'Multi-post stories',
-    description: 'This is a dicription of my works.',
+    name: 'Multi-post stories story one',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
     liveLink: 'See Live',
     sourceLink: 'See Source',
+    mobileSrc: "images/pop.svg",
+  },
+
+  {
+    name: 'My name is Daniel',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    featuredImage: './img/coding-modified.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+    mobileSrc: "images/pop.svg",
+  },
+
+  {
+    name: 'Multi-post story three',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    featuredImage: './img/coding-modified.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+    mobileSrc: "images/pop.svg",
+  },
+
+  {
+    name: 'Multi-post story four',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    featuredImage: './img/coding-modified.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+    mobileSrc: "images/pop.svg",
+  },
+
+  {
+    name: 'Multi-post stories five',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    featuredImage: './img/coding-modified.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+    mobileSrc: "images/pop.svg",
+  },
+
+  {
+    name: 'Multi-post stories six',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    featuredImage: './img/coding-modified.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+    mobileSrc: "images/pop.svg",
   },
 ];
 
 
 const button = document.querySelectorAll(".see-button");
 const popup = document.querySelector(".popup");
+const popupWindow = document.querySelector('.popup-window')
 const sign = document.querySelector(".xsign");
-button.forEach((item) => {
-  item.addEventListener("click", () => {
-    popup.classList.toggle("pophide");
-  });
-})
+const windowHeader = document.querySelector('.phead-h2');
+const windowText = document.querySelector('.ptext');
+const windowImage = document.querySelector('.pop-img')
+
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener('click', () => {
+    popup.classList.toggle('pophide');
+    popupWindow.classList.toggle('pophide');
+    windowHeader.innerHTML = projectDetails[i].name;
+    windowText.innerHTML = projectDetails[i].description;
+    windowImage.src = projectDetails[i].mobileSrc;
+    console.log(button);
+  })
+}
+
 sign.addEventListener("click", () => {
   popup.classList.toggle("pophide");
+  popupWindow.classList.toggle('pophide');
 });
 
+
+
 // mediaquery
-window.addEventListener("resize", () => {
-  if (window.innerWidth >=768) {
-    popup.classList.toggle("pophide");
-  }
-});
-const popupdesk = document.querySelector(".popupdesk");
-window.addEventListener("resize", () => {
-  if (window.innerWidth >=768) {
-    popupdesk.classList.toggle("pophidedesk");
-  }
-});
-const signdesk = document.querySelector(".xsigndesk");
-signdesk.addEventListener("click", () => {
-  popupdesk.classList.toggle("pophidedesk");
-});
 
 
 
