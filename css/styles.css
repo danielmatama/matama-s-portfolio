@@ -95,6 +95,7 @@ a {
 .ptext {
   margin-left: 10px;
   margin-right: 10px;
+  height: auto;
 }
 
 .plist {
@@ -121,11 +122,13 @@ a {
   justify-content: flex-start;
   list-style: none;
   gap: 47px;
+  width: auto;
 }
 
 .see {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding-right: 10px;
+  margin-bottom: 20px;
   color: white;
   width: 151px;
   height: 48px;
