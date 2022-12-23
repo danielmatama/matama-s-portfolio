@@ -51,7 +51,7 @@ section.innerHTML = `
 const projectDetails = [
   {
     name: 'Multi-post stories story one',
-    description: 'tempor incididunt ut labore et dolorveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, deserunt mollit anim id est laborum.',
+    description: 'tempor incididunt ut labore et dolorveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatt anim id est laborum.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
     liveLink: 'See Live',
@@ -61,7 +61,7 @@ const projectDetails = [
 
   {
     name: 'My name is Daniel',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Exidatat non proident, sunt in culpa qui officia de.',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullain culpa qui officia de.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
     liveLink: 'See Live',
@@ -71,7 +71,7 @@ const projectDetails = [
 
   {
     name: 'Multi-post story three',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excet  officia deserunt mollit anim id est laborum.',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pa anim id est laborum.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
     liveLink: 'See Live',
@@ -81,7 +81,7 @@ const projectDetails = [
 
   {
     name: 'Multi-post story four',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excein culpa qui oeserunt mollit anim id est laborum.',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullait anim id est laborum.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
     liveLink: 'See Live',
@@ -91,7 +91,7 @@ const projectDetails = [
 
   {
     name: 'Multi-post stories five',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria cupidatat non proident, sunt in culpt anim id est laborum.',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat n culpt anim id est laborum.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
     liveLink: 'See Live',
@@ -101,7 +101,7 @@ const projectDetails = [
 
   {
     name: 'Multi-post stories six',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur dfghhficia deserunt mollit anim id est laborum.',
+    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu futeur dmollit anim id est laborum.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
     liveLink: 'See Live',
@@ -133,6 +133,38 @@ for (let i = 0; i < button.length; i++) {
 sign.addEventListener("click", () => {
   popup.classList.toggle("pophide");
   popupWindow.classList.toggle('pophide');
+});
+
+const form = document.querySelector('form');
+const email = document.querySelector('input[type="email"]');
+const msg = document.querySelector('form .message');
+const name = document.querySelector('input[type="text"]');
+const text = document.querySelector('in');
+
+function showError(m) {
+  msg.style.display = 'block';
+  msg.innerText = m;
+}
+
+function showSuccess(mass) {
+  msg.style.display = 'block';
+  msg.style.color = 'white';
+  msg.style.backgroundColor = '#ff6b00';
+  msg.innerText = mass;
+}
+
+function checkLowerCase(input) {
+  if (input.value !== input.value.toLowerCase()) {
+    showError('please write the email in lowercase');
+  } else {
+    showSuccess('Thank You.');
+    form.submit();
+  }
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  checkLowerCase(email);
 });
 
 

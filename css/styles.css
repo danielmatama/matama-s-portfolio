@@ -96,6 +96,7 @@ a {
   margin-left: 10px;
   margin-right: 10px;
   height: 148px;
+  z-index: 1;
 }
 
 .plist {
@@ -117,12 +118,12 @@ a {
 }
 
 .pbuttons {
-  display: flex;
-  flex-direction: row;
+  display: block;
   justify-content: flex-start;
   list-style: none;
-  gap: 47px;
+  gap: 55px;
   width: auto;
+  z-index: -1;
 }
 
 .see {
