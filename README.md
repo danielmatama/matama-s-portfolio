@@ -42,7 +42,7 @@
 
 **[Matama's portfolio]** 
 
-  The core goal of my project is to quickly and seamlessly display my projects, skills and abilities to potential employers.
+  The core goal of this project is to quickly and seamlessly display my projects, skills and abilities to potential employers.
 
    I learned how to use Bootstrap for styling. I have learned new HTML 5 elements and their implementation I have learned to use Sass and Scss What challenge did you run into while developing this project.
 
