@@ -31,8 +31,8 @@ section.innerHTML = `
   </div>
   <h2 class="phead-h2"></h2>
     <ul class="plist">
-      <li><a href="#" class="panc card-a4">Ruby on rails</a></li>
-      <li><a href="#" class="panc card-a2">CSS</a></li>
+      <li><a href="#" class="panc card-a4">Ruby on Rails</a></li>
+      <li><a href="#" class="panc card-a2">React</a></li>
       <li><a href="#" class="panc card-a3">Javscript</a></li>
     </ul>
   <p class="ptext"> </p>
@@ -51,63 +51,62 @@ section.innerHTML = `
 `;
 
 const projectDetails = [{
-    name: 'Multi-post stories story one',
-    description: 'tempor incididunt ut labore et dolorveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatt anim id est laborum.',
-    featuredImage: './img/coding-modified.png',
+    name: 'Recipes App',
+    description: 'Recipes App is a website that provides a wide variety of recipe for users. Users have access to add recipes, delete recipes, add food and deletes food. The app also allows user to know what is required in order to prepare a recipe',
+    featuredImage: 'images/budget-foods.jpg',
     technologies: ['html', 'bootstrap', 'ruby'],
     liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    sourceLink: 'https://github.com/danielmatama/Recipe-app-rails',
+    mobileSrc: 'images/budget-foods.jpg',
   },
 
   {
-    name: 'My name is Daniel',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullain culpa qui officia de.',
+    name: 'Budget App',
+    description: 'Budget App is a mobile web application that allows you to manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spend and on what.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    liveLink: 'https://tashbudgetapp.onrender.com',
+    sourceLink: 'https://github.com/danielmatama/budget-app-rails',
+    mobileSrc: 'images/budget-app.jpg',
   },
 
   {
-    name: 'Multi-post story three',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pa anim id est laborum.',
+    name: 'Booking App',
+    description: 'Booking App is an application for cars. Create an account, and find and book your dream car today',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    liveLink: 'https://book-an-appointment-frontend.onrender.com',
+    sourceLink: 'https://github.com/calebchris000/Book-An-Appointment-Frontend',
+    mobileSrc: 'images/car.jpg',
   },
 
   {
-    name: 'Multi-post story four',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullait anim id est laborum.',
+    name: 'Blog App',
+    description: 'The Blog App is an example of a blog website built using Ruby on Rails and PostgreSQL.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    sourceLink: 'https://github.com/danielmatama/Blog-app-rails',
+    mobileSrc: 'images/blog.jpg',
   },
 
   {
-    name: 'Multi-post stories five',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat n culpt anim id est laborum.',
+    name: 'Bookstore App',
+    description: 'This app is a must have instrument for book lovers. It is a webpage that allows you to add your favourite books and authors and save them. It also allows you to remove any books you may have already read or wish to replace. It will accept all books and authors without fail. Built with HTML, CSS, and JS.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
     liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    sourceLink: 'https://github.com/danielmatama/bookstore-app-react',
+    mobileSrc: 'images/bookstore.jpg',
   },
 
   {
-    name: 'Multi-post stories six',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu futeur dmollit anim id est laborum.',
+    name: 'Metrics App',
+    description: 'This is a metrics webapp demo for digital currency. Users can get information about a related crypto coin',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    liveLink: 'https://metrics-matama.netlify.app',
+    sourceLink: 'https://github.com/danielmatama/metrics-app',
+    mobileSrc: 'images/metrics.jpg',
   },
 ];
 
