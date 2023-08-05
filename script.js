@@ -110,6 +110,53 @@ const projectDetails = [{
   },
 ];
 
+// ... buttons code
+
+// Loop through the project details and create the project cards
+projectDetails.forEach(project => {
+  const card = document.createElement('div');
+  card.classList.add('project-card');
+  card.innerHTML = `
+    <!-- ... card content ... -->
+    <div class="buttons">
+      <button class="see see-live" data-link="${project.liveLink}">
+        <span>See Live</span>
+        <span><img src="images/upload.svg" alt=""></span>
+      </button>
+      <button class="see see-source" data-link="${project.sourceLink}">
+        <span>See Source</span>
+        <span><img src="images/vector.svg" alt=""></span>
+      </button>
+    </div>
+  `;
+
+  section.appendChild(card);
+});
+
+// ... rest of the code ...
+
+// Add event listeners to the buttons
+const seeLiveButtons = document.querySelectorAll('.see-live');
+const seeSourceButtons = document.querySelectorAll('.see-source');
+
+seeLiveButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const liveLink = button.getAttribute('data-link');
+    if (liveLink) {
+      window.open(liveLink, '_blank'); // Open link in a new tab
+    }
+  });
+});
+
+seeSourceButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const sourceLink = button.getAttribute('data-link');
+    if (sourceLink) {
+      window.open(sourceLink, '_blank'); // Open link in a new tab
+    }
+  });
+});
+
 const button = document.querySelectorAll('.see-button');
 const popup = document.querySelector('.popup');
 const popupWindow = document.querySelector('.popup-window')
