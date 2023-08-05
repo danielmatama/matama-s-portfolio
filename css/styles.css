@@ -246,7 +246,6 @@ a {
 
 .card-image {
   background-color: #d0d9d4;
-  margin-bottom: 1px;
   background-size: cover;
   border-radius: 15px 15px 0 0;
   display: flex;
@@ -273,14 +272,6 @@ a {
 
 .card-a3 {
   margin-right: 10px;
-}
-
-.card-image {
-  background-color: #d0d9d4;
-  height: 270px;
-  margin-bottom: 15px;
-  background-size: cover;
-  border-radius: 15px 15px 0 0;
 }
 
 .card-text {
