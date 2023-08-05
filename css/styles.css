@@ -253,6 +253,8 @@ a {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  height: 270px;
+  margin-bottom: 15px;
 }
 
 .card-image img {
@@ -260,7 +262,6 @@ a {
   height: 100%;
   object-fit: cover;
 }
-
 
 .card-a1 {
   margin-right: 10px;
