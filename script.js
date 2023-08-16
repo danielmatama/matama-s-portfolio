@@ -1,6 +1,8 @@
 const dropdownButton = document.querySelector('.dropdown-button');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 const mark = document.querySelector('.xmark');
+const navBar = document.querySelector('.nav-bar');
+const header = document.querySelector('.header');
 const Items = document.querySelectorAll('.nav-bar .ax');
 const namee = document.querySelector('input[type="text"]');
 const text = document.querySelector('textarea');
@@ -133,8 +135,6 @@ projectDetails.forEach(project => {
   section.appendChild(card);
 });
 
-// ... rest of the code ...
-
 // Add event listeners to the buttons
 const seeLiveButtons = document.querySelectorAll('.see-live');
 const seeSourceButtons = document.querySelectorAll('.see-source');
@@ -230,4 +230,12 @@ valueInput.forEach(showNow);
 form.addEventListener('change', (event) => {
   event.preventDefault();
   addVale(namee.value, email.value, text.value);
+});
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > header.offsetHeight) {
+    navBar.classList.add('sticky-nav');
+  } else {
+    navBar.classList.remove('sticky-nav');
+  }
 });

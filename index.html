@@ -26,35 +26,38 @@
 
 
   <header class="header">
-    <nav class="nav-bar">
-      <ul class="nav-element">
-        <li class="nav-link mobile-link"><a href="#" class="logo">Welcome</a></li>
-        <li class="nav-link desktop-link"><a href="#">Portifolio</a></li>
-        <li class="nav-link desktop-link"><a href="#">About</a></li>
-        <li class="nav-link desktop-link" id="test"><a href="#">Contact</a></li>
+    <div class="sticky-nav">
+      <nav class="nav-bar">
+        <ul class="nav-element">
+          <li class="nav-link mobile-link"><a href="#" class="logo">Welcome</a></li>
+          <li class="nav-link desktop-link"><a href="#portifolio">Portifolio</a></li>
+          <li class="nav-link desktop-link"><a href="#about">About</a></li>
+          <li class="nav-link desktop-link" id="test"><a href="#contact">Contact</a></li>
+  
+          <div class="dropdown">
+  
+          <div class="dbutton">
+          <li class="nav-link mobile-link">
+            <a href="#" class="dropdown-button">
+              <img src="images/menubar.svg" width="24px" height="24px" alt="decorative image">
+            </a>
+          </li>
+          </div>
+  
+  
+          <div class="dropdown-menu hide" id="myDropdown">
+            <span class="xmark"><i class="fa-solid fa-xmark"></i></span>
+            <a href="#portfolio" class="ax">Portfolio</a>
+            <a href="#about" class="ax">About</a>
+            <a href="#contact" class="ax">Contact</a>
+          </div>
+  
+          </div>
+  
+        </ul>
+      </nav>
+    </div>
 
-        <div class="dropdown">
-
-        <div class="dbutton">
-        <li class="nav-link mobile-link">
-          <a href="#" class="dropdown-button">
-            <img src="images/menubar.svg" width="24px" height="24px" alt="decorative image">
-          </a>
-        </li>
-        </div>
-
-
-        <div class="dropdown-menu hide" id="myDropdown">
-          <span class="xmark"><i class="fa-solid fa-xmark"></i></span>
-          <a href="#portfolio" class="ax">Portfolio</a>
-          <a href="#about" class="ax">About</a>
-          <a href="#contact" class="ax">Contact</a>
-        </div>
-
-        </div>
-
-      </ul>
-    </nav>
   </header>
 
   <!-- Introduction Area -->
@@ -86,7 +89,7 @@
     </div>
       <div class="work-cards">
       <div class="card">
-        <div class="card-image car"><img src="images/budget-foods.jpg" alt="Recepies image"></div>
+        <div class="card-image car"><img src="images/budget_foods.jpg" alt="Recepies image"></div>
         <div class="card-bottom">
         <h2 class="card-text">Recipes App</h2>
         <ul class="alist">
@@ -102,7 +105,7 @@
       <div class="grid-section">
 
         <div class="card">
-          <div class="card-image car"><img src="images/budget-app.jpg" alt="book an appointment image"></div>
+          <div class="card-image car"><img src="images/budget_app.jpg" alt="book an appointment image"></div>
           <div class="card-bottom">
           <h2 class="card-text">Budget App</h2>
           <ul class="alist">
@@ -117,7 +120,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card-image car"><img src="images/car.jpg" alt="book an appointment image"></div>
+        <div class="card-image car"><img src="images/cars.jpg" alt="book an appointment image"></div>
         <div class="card-bottom">
         <h2 class="card-text">Booking App</h2>
         <ul class="alist">
@@ -146,7 +149,7 @@
       </div>
 
       <div class="card">
-        <div class="card-image car"><img src="images/bookstore.jpg" alt="blog app image"></div>
+        <div class="card-image car"><img src="images/book_store.jpg" alt="blog app image"></div>
         <div class="card-bottom">
         <h2 class="card-text">Bookstore App</h2>
         <ul class="alist">
@@ -161,7 +164,7 @@
       </div>
 
       <div class="card">
-        <div class="card-image car"><img src="images/metrics.jpg" alt="blog app image"></div>
+        <div class="card-image car"><img src="images/metrics_c.jpg" alt="blog app image"></div>
         <div class="card-bottom">
         <h2 class="card-text">Metrics App</h2>
         <ul class="alist">

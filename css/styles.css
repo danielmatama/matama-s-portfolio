@@ -14,6 +14,13 @@
   justify-content: space-between;
 }
 
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* Add your desired background color */
+  z-index: 100; /* Make sure the navigation is above other elements */
+}
+
 a {
   text-decoration: none;
   color: #172b4d;
