@@ -14,11 +14,13 @@
   justify-content: space-between;
 }
 
-.sticky-nav {
-  position: sticky;
+.fixed {
+  position: fixed;
   top: 0;
-  background-color: #fff; /* Add your desired background color */
-  z-index: 100; /* Make sure the navigation is above other elements */
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
 }
 
 a {
@@ -114,6 +116,7 @@ a {
 }
 
 .ptext {
+  padding-top: 30px;
   margin-left: 10px;
   margin-right: 10px;
   height: 146px;
@@ -545,28 +548,23 @@ a {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
+    padding-left: 70px;
   }
 
   .xsign {
-    position: relative;
-    top: 0;
-    margin-left: 0;
-    padding-top: 0;
     color: #67798e;
     width: 35px;
     height: 35px;
-    background-color: #ebecf0;
-    align-self: flex-end;
-    margin-right: 3rem;
     padding-left: 7px;
-    margin-top: 10px;
+    margin-top: 1px;
+    margin-left: 600px;
   }
 
   .pop-img {
-    width: 900px;
-    height: 400px;
+    width: 600px;
+    height: 300px;
     padding-right: 35px;
-    content: url(../images/desktop.png);
+  
   }
 
   .phead-h2 {
