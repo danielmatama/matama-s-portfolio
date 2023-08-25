@@ -65,13 +65,13 @@ const projectDetails = [{
   },
 
   {
-    name: 'Budget App',
-    description: 'Budget App is a mobile web application that allows you to manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spend and on what.',
+    name: 'Cultural Site',
+    description: 'This project is a tool for communication, advertisement and more. It shades light on thediverse culture among the Ugandan people...',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'https://tashbudgetapp.onrender.com',
-    sourceLink: 'https://github.com/danielmatama/budget-app-rails',
-    mobileSrc: 'images/budget_app2.png',
+    liveLink: 'https://danielmatama.github.io/matama-capstone/',
+    sourceLink: 'https://github.com/danielmatama/matama-capstone',
+    mobileSrc: 'images/culture.png',
     id: '2',
   },
 
