@@ -14,6 +14,15 @@
   justify-content: space-between;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+}
+
 a {
   text-decoration: none;
   color: #172b4d;
@@ -107,6 +116,7 @@ a {
 }
 
 .ptext {
+  padding-top: 30px;
   margin-left: 10px;
   margin-right: 10px;
   height: 146px;
@@ -244,6 +254,24 @@ a {
   border-radius: 15px;
 }
 
+.card-image {
+  background-color: #d0d9d4;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 270px;
+  margin-bottom: 15px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .card-a1 {
   margin-right: 10px;
 }
@@ -254,14 +282,6 @@ a {
 
 .card-a3 {
   margin-right: 10px;
-}
-
-.card-image {
-  background-color: #d0d9d4;
-  height: 270px;
-  margin-bottom: 15px;
-  background-size: cover;
-  border-radius: 15px 15px 0 0;
 }
 
 .card-text {
@@ -492,8 +512,72 @@ a {
     display: none;
   }
 
+    /* Keyframes for the fade-in animation */
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    /* Apply the animation to the introduction area */
+    .introduction {
+      animation: fade-in 1s ease-in-out forwards;
+    }
+  
+    /* Other existing CSS styles for the introduction section */
+    .introduction-title {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .title-green {
+      font-size: 2rem;
+      color: #00a88f;
+      margin-bottom: 1rem;
+    }
+  
+    .body {
+      font-size: 1.25rem;
+      line-height: 1.6;
+    }
+
+    .about-me {
+      opacity: 0;
+      animation: fade-in 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in {
+      0% {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+
   .desktop-link {
     display: flex;
+  }
+
+  .now-btns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btnz {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-bottom: 10px;
   }
 
   .pophide {
@@ -528,28 +612,22 @@ a {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
+    padding-left: 70px;
   }
 
   .xsign {
-    position: relative;
-    top: 0;
-    margin-left: 0;
-    padding-top: 0;
     color: #67798e;
     width: 35px;
     height: 35px;
-    background-color: #ebecf0;
-    align-self: flex-end;
-    margin-right: 3rem;
     padding-left: 7px;
-    margin-top: 10px;
+    margin-top: 1px;
+    margin-left: 600px;
   }
 
   .pop-img {
-    width: 900px;
-    height: 400px;
+    width: 600px;
+    height: 300px;
     padding-right: 35px;
-    content: url(../images/desktop.png);
   }
 
   .phead-h2 {

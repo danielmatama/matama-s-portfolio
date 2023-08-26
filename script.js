@@ -1,6 +1,8 @@
 const dropdownButton = document.querySelector('.dropdown-button');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 const mark = document.querySelector('.xmark');
+const navBar = document.querySelector('.nav-bar');
+const header = document.querySelector('.header');
 const Items = document.querySelectorAll('.nav-bar .ax');
 const namee = document.querySelector('input[type="text"]');
 const text = document.querySelector('textarea');
@@ -31,17 +33,17 @@ section.innerHTML = `
   </div>
   <h2 class="phead-h2"></h2>
     <ul class="plist">
-      <li><a href="#" class="panc card-a4">Ruby on rails</a></li>
-      <li><a href="#" class="panc card-a2">CSS</a></li>
+      <li><a href="#" class="panc card-a4">Ruby on Rails</a></li>
+      <li><a href="#" class="panc card-a2">React</a></li>
       <li><a href="#" class="panc card-a3">Javscript</a></li>
     </ul>
   <p class="ptext"> </p>
   <ul class="pbuttons">
-  <button class="see" type="button" name="button">
+  <button class="see" type="button" name="button" id="live-btn">
   <span>See Live</span>
   <span><img src="images/upload.svg" alt=""></span>
   </button>
-  <button class="see" type="button" name="button">
+  <button class="see" type="button" name="button" id="git-btn">
   <span>See Source</span>
   <span><img src="images/vector.svg" alt=""></span>
   </button>
@@ -50,66 +52,74 @@ section.innerHTML = `
   </div>
 `;
 
+
 const projectDetails = [{
-    name: 'Multi-post stories story one',
-    description: 'tempor incididunt ut labore et dolorveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatt anim id est laborum.',
-    featuredImage: './img/coding-modified.png',
+    name: 'Maths App',
+    description: 'Maths App is a web application for maths lovers, where a user can do their favourite calculations, and see quotes from their beloved mathmaticians.',
+    featuredImage: 'images/budget_foods.jpg',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    liveLink: 'https://fluffy-beijinho-b768b3.netlify.app/',
+    sourceLink: 'https://github.com/danielmatama/react-app.git',
+    mobileSrc: 'images/maths2.png',
+    id: '1',
   },
 
   {
-    name: 'My name is Daniel',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullain culpa qui officia de.',
+    name: 'Cultural Site',
+    description: 'This project is a tool for communication, advertisement and more. It shades light on thediverse culture among the Ugandan people...',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    liveLink: 'https://danielmatama.github.io/matama-capstone/',
+    sourceLink: 'https://github.com/danielmatama/matama-capstone',
+    mobileSrc: 'images/culture.png',
+    id: '2',
   },
 
   {
-    name: 'Multi-post story three',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pa anim id est laborum.',
+    name: 'Booking App',
+    description: 'Booking App is an application for cars. Create an account, and find and book your dream car today',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    liveLink: 'https://book-an-appointment-frontend.onrender.com',
+    sourceLink: 'https://github.com/calebchris000/Book-An-Appointment-Frontend',
+    mobileSrc: 'images/book3.png',
+    id: '3',
   },
 
   {
-    name: 'Multi-post story four',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullait anim id est laborum.',
+    name: 'Blog App',
+    description: 'The Blog App is an example of a blog website built using Ruby on Rails and PostgreSQL.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    liveLink: 'https://github.com/danielmatama/Blog-app-rails',
+    sourceLink: 'https://github.com/danielmatama/Blog-app-rails',
+    mobileSrc: 'images/blog1.jpg',
+    id: '4',
   },
 
   {
-    name: 'Multi-post stories five',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat n culpt anim id est laborum.',
+    name: 'Bookstore App',
+    description: 'This app is a must have instrument for book lovers. It is a webpage that allows you to add your favourite books and authors and save them. It also allows you to remove any books you may have already read or wish to replace. It will accept all books and authors without fail. Built with HTML, CSS, and JS.',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    liveLink: 'https://github.com/danielmatama/bookstore-app-react',
+    sourceLink: 'https://github.com/danielmatama/bookstore-app-react',
+    mobileSrc: 'images/book_store2.png',
+    id: '5',
   },
 
   {
-    name: 'Multi-post stories six',
-    description: 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu futeur dmollit anim id est laborum.',
+    name: 'Metrics App',
+    description: 'This is a metrics webapp demo for digital currency. Users can get information about a related crypto coin',
     featuredImage: './img/coding-modified.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
-    mobileSrc: 'images/pop.svg',
+    liveLink: 'https://metrics-matama.netlify.app',
+    sourceLink: 'https://github.com/danielmatama/metrics-app',
+    mobileSrc: 'images/metrics_c2.png',
+    id: '6',
   },
 ];
+
 
 const button = document.querySelectorAll('.see-button');
 const popup = document.querySelector('.popup');
@@ -117,17 +127,37 @@ const popupWindow = document.querySelector('.popup-window')
 const sign = document.querySelector('.xsign');
 const windowHeader = document.querySelector('.phead-h2');
 const windowText = document.querySelector('.ptext');
-const windowImage = document.querySelector('.pop-img')
+const windowImage = document.querySelector('.pop-img');
+const liveBtn = document.getElementById('live-btn');
+const gitBtn = document.getElementById('git-btn');
 
 for (let i = 0; i < button.length; i += 1) {
   button[i].addEventListener('click', () => {
     popup.classList.toggle('pophide');
     popupWindow.classList.toggle('pophide');
+    popupWindow.id = `project_${projectDetails[i].id}`;
     windowHeader.innerHTML = projectDetails[i].name;
     windowText.innerHTML = projectDetails[i].description;
     windowImage.src = projectDetails[i].mobileSrc;
-  })
+
+  });
+
 }
+liveBtn.addEventListener('click', ()=>{
+    projectDetails.forEach(project => {
+      if (!!liveBtn.closest(`#project_${project.id}`)) {
+        window.location.href = project.liveLink;
+      }
+    })
+});
+
+gitBtn.addEventListener('click', ()=>{
+  projectDetails.forEach(project => {
+    if (!!gitBtn.closest(`#project_${project.id}`)) {
+      window.location.href = project.sourceLink;
+    }
+  })
+});
 
 sign.addEventListener('click', () => {
   popup.classList.toggle('pophide');

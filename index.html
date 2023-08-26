@@ -26,54 +26,57 @@
 
 
   <header class="header">
-    <nav class="nav-bar">
-      <ul class="nav-element">
-        <li class="nav-link mobile-link"><a href="#" class="logo">Welcome</a></li>
-        <li class="nav-link desktop-link"><a href="#">Portifolio</a></li>
-        <li class="nav-link desktop-link"><a href="#">About</a></li>
-        <li class="nav-link desktop-link" id="test"><a href="#">Contact</a></li>
+    <div class="fixed">
+      <nav class="nav-bar">
+        <ul class="nav-element">
+          <li class="nav-link mobile-link"><a href="#" class="logo">Welcome</a></li>
+          <li class="nav-link desktop-link"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-link desktop-link"><a href="#works-section">Projects</a></li>
+          <li class="nav-link desktop-link"><a href="#about">About</a></li>
+          <li class="nav-link desktop-link" id="test"><a href="#contact">Contact</a></li>
+  
+          <div class="dropdown">
+  
+          <div class="dbutton">
+          <li class="nav-link mobile-link">
+            <a href="#" class="dropdown-button">
+              <img src="images/menubar.svg" width="24px" height="24px" alt="decorative image">
+            </a>
+          </li>
+          </div>
+  
+  
+          <div class="dropdown-menu hide" id="myDropdown">
+            <span class="xmark"><i class="fa-solid fa-xmark"></i></span>
+            <a href="#portfolio" class="ax">Portfolio</a>
+            <a href="#about" class="ax">About</a>
+            <a href="#contact" class="ax">Contact</a>
+          </div>
+  
+          </div>
+  
+        </ul>
+      </nav>
+    </div>
 
-        <div class="dropdown">
-
-        <div class="dbutton">
-        <li class="nav-link mobile-link">
-          <a href="#" class="dropdown-button">
-            <img src="images/menubar.svg" width="24px" height="24px" alt="decorative image">
-          </a>
-        </li>
-        </div>
-
-
-        <div class="dropdown-menu hide" id="myDropdown">
-          <span class="xmark"><i class="fa-solid fa-xmark"></i></span>
-          <a href="#portfolio" class="ax">Portfolio</a>
-          <a href="#about" class="ax">About</a>
-          <a href="#contact" class="ax">Contact</a>
-        </div>
-
-        </div>
-
-      </ul>
-    </nav>
   </header>
 
   <!-- Introduction Area -->
   <section class="introduction" id="portfolio">
     <h1 class="introduction-title">Hey there, I’m Matama</h1>
-    <h1 class="title-green">I’m a software developer</h1>
+    <h1 class="title-green">I’m a Full-stack developer</h1>
     <!-- <h1 class="introduction-title2"></h1> -->
     <p class="body">
-      I can help you build a product , feature or website Look through some of my work and experience! If you like what
-      you see and have a project you need coded,
-      don’t hestiate to contact me.
+      I can help you build a product , feature or website. Look through some of my work and experience! If you like what
+      you see, and have a project you need coded,
+      don’t hestiate to contact me!
     </p>
 
     <ul class="social-icons">
-      <li class="icon"><a href="#"><img src="images/twitter.svg" alt="twitter icon"></a></li>
-      <li class="icon"><a href="#"><img src="images/linkedin.svg" alt="linkedin icon"></a></li>
-      <li class="icon"><a href="#"><img src="images/medium.svg" alt="medium icon"></a></li>
-      <li class="icon"><a href="#"><img src="images/github.svg" alt="github icon"></a></li>
-      <li class="icon"><a href="#"><img src="images/angel.svg" alt="angel icon"></a></li>
+      <li class="icon"><a href="https://twitter.com/dan_matama" target="_blank"><img src="images/twitter.svg" alt="twitter icon"></a></li>
+      <li class="icon"><a href="https://www.linkedin.com/in/daniel-matama-mwebesa/" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon"></a></li>
+      <li class="icon"><a href="https://medium.com/@danmatama2020" target="_blank"><img src="images/medium.svg" alt="medium icon"></a></li>
+      <li class="icon"><a href="https://github.com/danielmatama" target="_blank"><img src="images/github.svg" alt="github icon"></a></li>
     </ul>
   </section>
   </div>
@@ -87,99 +90,140 @@
     </div>
       <div class="work-cards">
       <div class="card">
-        <div class="card-image car"></div>
+        <div class="card-image car"><img src="images/maths.jpg" alt="Recepies image"></div>
         <div class="card-bottom">
-        <h2 class="card-text">Multi-Post Stories Gain+Glory</h2>
+        <h2 class="card-text">Maths App</h2>
         <ul class="alist">
-          <li><a href="#" class="anc card-a1">Rubyonrails</a></li>
-          <li><a href="#" class="anc card-a2">CSS</a></li>
-          <li><a href="#" class="anc card-a3">Javscript</a></li>
-          <li><a href="#" class="anc card-a4">html</a></li>
+          <li><a href="#" class="anc card-a1">JavaScript</a></li>
+          <li><a href="#" class="anc card-a2">React</a></li>
+          <li><a href="#" class="anc card-a3">HTML</a></li>
         </ul>
         <a href="#" class="tag">
-          <button type="button" class="btn btn-success see-button">See Project</button>
+          <button type="button" class="btn btn-success see-button">Project Details</button>
         </a>
+        <div class="now-btns">
+          <a href="https://fluffy-beijinho-b768b3.netlify.app/" target="_blank" class="tag">
+            <button type="button" class="btn btn-primary btnz">Go Live Now</button>
+          </a>
+          <a href="https://github.com/danielmatama/react-app" target="_blank" class="tag">
+            <button type="button" class="btn btn-primary btnz">See Code Now</button>
+          </a>
+        </div>
       </div>
       </div>
       <div class="grid-section">
 
         <div class="card">
-          <div class="card-image car"></div>
+          <div class="card-image car"><img src="images/culture1.jpg" alt="book an appointment image"></div>
           <div class="card-bottom">
-          <h2 class="card-text">Multi-Post Stories Gain+Glory</h2>
+          <h2 class="card-text">cultural Site</h2>
           <ul class="alist">
-            <li><a href="#" class="anc card-a1">Rubyonrails</a></li>
-            <li><a href="#" class="anc card-a2">CSS</a></li>
+            <li><a href="#" class="anc card-a1">HTML</a></li>
+            <li><a href="#" class="anc card-a2">React</a></li>
             <li><a href="#" class="anc card-a3">Javscript</a></li>
-            <li><a href="#" class="anc card-a4">html</a></li>
           </ul>
           <a href="#" class="tag">
-            <button type="button" class="btn btn-success see-button">See Project</button>
+            <button type="button" class="btn btn-success see-button">Project Details</button>
           </a>
+          <div class="now-btns">
+            <a href="https://danielmatama.github.io/matama-capstone/" target="_blank" class="tag">
+              <button type="button" class="btn btn-primary btnz">Go Live Now</button>
+            </a>
+            <a href="https://github.com/danielmatama/matama-capstone" class="tag">
+              <button type="button" class="btn btn-primary btnz">See Code Now</button>
+            </a>
+          </div>
             </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-image car"></div>
+        <div class="card-image car"><img src="images/cars.jpg" alt="book an appointment image"></div>
         <div class="card-bottom">
-        <h2 class="card-text">Multi-Post Stories Gain+Glory</h2>
+        <h2 class="card-text">Booking App</h2>
         <ul class="alist">
-          <li><a href="#" class="anc card-a1">Rubyonrails</a></li>
-          <li><a href="#" class="anc card-a2">CSS</a></li>
+          <li><a href="#" class="anc card-a1">RubyonRails</a></li>
+          <li><a href="#" class="anc card-a2">React</a></li>
           <li><a href="#" class="anc card-a3">Javscript</a></li>
-          <li><a href="#" class="anc card-a4">html</a></li>
         </ul>
         <a href="#" class="tag">
-          <button type="button" class="btn btn-success see-button">See Project</button>
+          <button type="button" class="btn btn-success see-button">Project Details</button>
         </a>
+        <div class="now-btns">
+          <a href="https://book-an-appointment-frontend.onrender.com" target="_blank" class="tag">
+            <button type="button" class="btn btn-primary btnz">Go Live Now</button>
+          </a>
+          <a href="https://github.com/calebchris000/Book-An-Appointment-Frontend" target="_blank" class="tag">
+            <button type="button" class="btn btn-primary btnz">See Code Now</button>
+          </a>
+        </div>
         </div>
       </div>
 
       <div class="card">
-        <div class="card-image car"></div>
+        <div class="card-image car"><img src="images/blog1.jpg" alt="blog app image"></div>
         <div class="card-bottom">
-        <h2 class="card-text">Multi-Post Stories Gain+Glory</h2>
+        <h2 class="card-text">Blog App</h2>
         <ul class="alist">
-          <li><a href="#" class="anc card-a1">Rubyonrails</a></li>
-          <li><a href="#" class="anc card-a2">CSS</a></li>
-          <li><a href="#" class="anc card-a3">Javscript</a></li>
-          <li><a href="#" class="anc card-a4">html</a></li>
+          <li><a href="#" class="anc card-a1">RubyonRails</a></li>
+          <li><a href="#" class="anc card-a3">PostgreSQL</a></li>
         </ul>
         <a href="#" class="tag">
-          <button type="button" class="btn btn-success see-button">See Project</button>
+          <button type="button" class="btn btn-success see-button">Project Details</button>
         </a>
+        <div class="now-btns">
+          <a href="https://github.com/danielmatama/Blog-app-rails" target="_blank" class="tag">
+            <button type="button" class="btn btn-primary btnz">See Code Now</button>
+          </a>
+          <a href="https://github.com/danielmatama/Blog-app-rails" class="tag">
+            <button type="button" class="btn btn-primary btnz">See Code Now</button>
+          </a>
+        </div>
         </div>
       </div>
 
       <div class="card">
-        <div class="card-image car"></div>
+        <div class="card-image car"><img src="images/book_store.jpg" alt="blog app image" loading="lazy"></div>
         <div class="card-bottom">
-        <h2 class="card-text">Multi-Post Stories Gain+Glory</h2>
+        <h2 class="card-text">Bookstore App</h2>
         <ul class="alist">
-          <li><a href="#" class="anc card-a1">Rubyonrails</a></li>
+          <li><a href="#" class="anc card-a1">HTML</a></li>
           <li><a href="#" class="anc card-a2">CSS</a></li>
           <li><a href="#" class="anc card-a3">Javscript</a></li>
-          <li><a href="#" class="anc card-a4">html</a></li>
         </ul>
         <a href="#" class="tag">
-          <button type="button" class="btn btn-success see-button">See Project</button>
+          <button type="button" class="btn btn-success see-button">Project Details</button>
         </a>
+        <div class="now-btns">
+          <a href="https://magnificent-daffodil-8f1f95.netlify.app/" target="_blank" class="tag">
+            <button type="button" class="btn btn-primary btnz">Go Live Now</button>
+          </a>
+          <a href="https://github.com/danielmatama/bookstore-app-react" class="tag">
+            <button type="button" class="btn btn-primary btnz">See Code Now</button>
+          </a>
+        </div>
         </div>
       </div>
 
       <div class="card">
-        <div class="card-image car"></div>
+        <div class="card-image car"><img src="images/metrics_c.jpg" alt="blog app image" loading="lazy"></div>
         <div class="card-bottom">
-        <h2 class="card-text">Multi-Post Stories Gain+Glory</h2>
+        <h2 class="card-text">Metrics App</h2>
         <ul class="alist">
-          <li><a href="#" class="anc card-a1">Rubyonrails</a></li>
-          <li><a href="#" class="anc card-a2">CSS</a></li>
+          <li><a href="#" class="anc card-a1">React</a></li>
+          <li><a href="#" class="anc card-a2">Redux</a></li>
           <li><a href="#" class="anc card-a3">Javscript</a></li>
-          <li><a href="#" class="anc card-a4">html</a></li>
         </ul>
         <a href="#" class="tag">
-          <button type="button" class="btn btn-success see-button">See Project</button>
+          <button type="button" class="btn btn-success see-button">Project Details</button>
         </a>
+        <div class="now-btns">
+          <a href="https://metrics-matama.netlify.app/" target="_blank" class="tag">
+            <button type="button" class="btn btn-primary btnz">Go Live Now</button>
+          </a>
+          <a href="https://github.com/danielmatama/metrics-app" target="_blank" class="tag">
+            <button type="button" class="btn btn-primary btnz">See Code Now</button>
+          </a>
+        </div>
         </div>
       </div>
       </div>
@@ -192,14 +236,14 @@
         <div class="about-me-text">
         <h1 class="intro">About Me</h1>
         <div class="par">
-        <p class="about-text"> I can help you build a product , feature or website Look through some of my work and
-          experience! If you like what you see and have a project you need coded,
-          don’t hestiate to contact me.</p>
+        <p class="about-text">I am Daniel Matama, a full-stack developer, and an experienced remote worker. I am goal-oriented and always interested in learning new things and solving new challenges. I am interested in all kinds of software development, and I am an excellent team worker. 
+          I also believe a little humor and a friendly smile go a long way to make the work environment more enjoyable.</p>
             </div>
         </div>
         <div class="text-center">
-          <button type="button" class="btn btn-success resume-button">Get My Resume</button>
-        </div>
+          <a href="https://docs.google.com/document/d/1Q_b2J5OZwh9pLIvVCNHWf7Y2JNlDNQjYSIMjJtLzmkM/edit?usp=sharing" class="btn btn-success resume-button">Get My Resume</a>
+      </div>
+      
         </div>
         <div class="t-x">
           <img src="images/group5.svg" alt="decorative image-2">
@@ -214,9 +258,9 @@
         </div>
         <h2 class="card-text2">Languages</h2>
         <ul class="alist">
-          <li><a href="#" class="anc2">Javascript</a></li>
+          <li><a href="#" class="anc2">JavaScript</a></li>
           <li><a href="#" class="anc2">Ruby</a></li>
-          <li><a href="#" class="anc2">Html</a></li>
+          <li><a href="#" class="anc2">HTML</a></li>
           <li><a href="#" class="anc2">CSS</a></li>
         </ul>
 
@@ -228,11 +272,9 @@
         </div>
         <h2 class="card-text2">Frameworks</h2>
         <ul class="alist">
+          <li><a href="#" class="anc2">Rails</a></li>
+          <li><a href="#" class="anc2">React</a></li>
           <li><a href="#" class="anc2">Bootstrap</a></li>
-          <li><a href="#" class="anc2">Ruby</a></li>
-          <li><a href="#" class="anc2">RSpec</a></li>
-          <li><a href="#" class="anc2">Capybara</a></li>
-          <li><a href="#" class="anc2">Selenium</a></li>
         </ul>
       </div>
 
@@ -242,11 +284,10 @@
         </div>
         <h2 class="card-text2">Skills</h2>
         <ul class="alist">
-          <li><a href="#" class="anc2">Codekit</a></li>
+          <li><a href="#" class="anc2">Databases</a></li>
           <li><a href="#" class="anc2">Github</a></li>
-          <li><a href="#" class="anc2">Codepen</a></li>
-          <li><a href="#" class="anc2">Gitlab</a></li>
-          <li><a href="#" class="anc2">Terminal</a></li>
+          <li><a href="#" class="anc2">Git</a></li>
+          <li><a href="#" class="anc2">Remote Programming</a></li>
         </ul>
       </div>
      </div>
@@ -293,11 +334,10 @@
 </section>
       <div class="end">
       <ul class="social-icons">
-        <li class="icon"><a href="#"><img src="images/twitter.svg" alt="twitter icon"></a></li>
-        <li class="icon"><a href="#"><img src="images/linkedin.svg" alt="linkedin icon"></a></li>
-        <li class="icon"><a href="#"><img src="images/medium.svg" alt="medium icon"></a></li>
-        <li class="icon"><a href="#"><img src="images/github.svg" alt="github icon"></a></li>
-        <li class="icon"><a href="#"><img src="images/angel.svg" alt="angel icon"></a></li>
+        <li class="icon"><a href="https://twitter.com/dan_matama" target="_blank"><img src="images/twitter.svg" alt="twitter icon"></a></li>
+        <li class="icon"><a href="https://www.linkedin.com/in/daniel-matama-mwebesa/" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon"></a></li>
+        <li class="icon"><a href="https://medium.com/@danmatama2020" target="_blank"><img src="images/medium.svg" alt="medium icon"></a></li>
+        <li class="icon"><a href="https://github.com/danielmatama" target="_blank"><img src="images/github.svg" alt="github icon"></a></li>
       </ul>
         </div>
 
