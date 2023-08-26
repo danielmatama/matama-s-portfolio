@@ -512,6 +512,40 @@ a {
     display: none;
   }
 
+    /* Keyframes for the fade-in animation */
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    /* Apply the animation to the introduction area */
+    .introduction {
+      animation: fade-in 1s ease-in-out forwards;
+    }
+  
+    /* Other existing CSS styles for the introduction section */
+    .introduction-title {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .title-green {
+      font-size: 2rem;
+      color: #00a88f;
+      margin-bottom: 1rem;
+    }
+  
+    .body {
+      font-size: 1.25rem;
+      line-height: 1.6;
+    }
+
   .desktop-link {
     display: flex;
   }
